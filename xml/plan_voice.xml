@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>    
+<AIRPORT>
+   <PLAN_NO><!--  航班列表  -->
+      <no>MU2457</no>
+   </PLAN_NO>
+   <EVENT_LX><!--  事件类型  -->
+       <ejkg>值机延误</ejkg><!--二级事件显示开启条件匹配项，事件类型现在这个页面才会显示二级事件-->  
+
+<!--下面是事件类型有哪些-->
+       <LX>开始值机</LX>
+       <LX>登机开始</LX>
+       <LX>催促登机</LX>
+       <LX>行李到达提取</LX>
+       <LX>到达接客</LX>
+        <LX>值机延误</LX>
+       <LX>到达延误</LX>
+    </EVENT_LX>
+    <SECONDARY_EVENT><!--  二级事件  -->
+       <event>天气原因</event>
+       <event>航班控制</event>
+       <event>航路</event>
+       <event>机械故障</event>
+       <event>延误</event>
+    </SECONDARY_EVENT>
+    <START_VOICE><!--语音需与对应的事件排序一致、条数也需一致-->
+        <voice_plan>audio/voice_cn/start_voice/start.wav</voice_plan><!--  第一节语音，如：音乐+各位请注意  -->
+    </START_VOICE>
+    <VOICE_PLAN_NO><!-- 第二节语音，如您搭乘的****号航班-->
+        <NO>audio/voice_cn/fn_voice/MU2457.wav</NO>
+
+    </VOICE_PLAN_NO>
+    <VOICE_LX><!--事件类型语音-->
+        
+         <voice_lx>audio/voice_cn/fle_voice/kszj.wav</voice_lx><!--开始值机-->
+         <voice_lx>audio/voice_cn/fle_voice/djks.wav</voice_lx><!--登机开始-->
+         <voice_lx>audio/voice_cn/fle_voice/ccdj.wav</voice_lx><!--催促登机-->
+         <voice_lx>audio/voice_cn/fle_voice/xlddtq.wav</voice_lx><!--行李到达提取-->
+         <voice_lx>audio/voice_cn/fle_voice/ddjk.wav</voice_lx> <!--值机延误，如对此造成的航班延误，我们深表抱歉,请在候机厅休息，等待通知-->
+         <voice_lx>audio/voice_cn/fle_voice/hbyw.wav</voice_lx><!--到达接客-->
+         <voice_lx>audio/voice_cn/fle_voice/ddyw.wav</voice_lx><!--到达延误-->
+         
+    </VOICE_LX>
+    <VOICE_SEC><!--二级事件-->
+        <voice_event>audio/voice_cn/se_voice/tqyy.wav</voice_event><!--天气原因，如由于天气原因，不能正常起飞机-->
+        <voice_event>audio/voice_cn/se_voice/hbkz.wav</voice_event><!--航班控制-->
+        <voice_event>audio/voice_cn/se_voice/hl.wav</voice_event><!--航路-->
+        <voice_event>audio/voice_cn/se_voice/jxgz.wav</voice_event><!--机械故障-->
+        <voice_event>audio/voice_cn/se_voice/yw.wav</voice_event><!--延误-->
+    </VOICE_SEC>
+
+    <START_VOICE_EN>
+        <voice_plan>audio/voice_en/start_voice/start.wav</voice_plan><!--  第一节英语语音，如：音乐+各位请注意  -->
+    </START_VOICE_EN>
+    <VOICE_PLAN_NO_EN><!-- 第二节英语语音，如您搭乘的****号航班-->
+        <NO>audio/voice_en/fn_voice/MU2457.wav</NO>
+
+    </VOICE_PLAN_NO_EN>
+    <VOICE_LX_EN><!--事件类型英语语音-->
+         
+         <voice_lx>audio/voice_en/fle_voice/kszj.wav</voice_lx><!--开始值机-->
+         <voice_lx>audio/voice_en/fle_voice/djks.wav</voice_lx><!--登机开始-->
+         <voice_lx>audio/voice_en/fle_voice/ccdj.wav</voice_lx><!--催促登机-->
+         <voice_lx>audio/voice_en/fle_voice/xlddtq.wav</voice_lx><!--行李到达提取-->
+         <voice_lx>audio/voice_en/fle_voice/ddjk.wav</voice_lx><!--到达接客-->
+         <voice_lx>audio/voice_en/fle_voice/hbyw.wav</voice_lx><!--值机延误，如对此造成的航班延误，我们深表抱歉,请在候机厅休息，等待通知-->
+         <voice_lx>audio/voice_en/fle_voice/ddyw.wav</voice_lx><!--到达延误-->
+         
+    </VOICE_LX_EN>
+    <VOICE_SEC_EN><!--二级事件英语-->
+        <voice_event>audio/voice_en/se_voice/tqyy.wav</voice_event><!--天气原因，如由于天气原因，不能正常起飞机-->
+        <voice_event>audio/voice_en/se_voice/hbkz.wav</voice_event><!--航班控制-->
+        <voice_event>audio/voice_en/se_voice/hl.wav</voice_event><!--航路-->
+        <voice_event>audio/voice_en/se_voice/jxgz.wav</voice_event><!--机械故障-->
+        <voice_event>audio/voice_en/se_voice/yw.wav</voice_event><!--延误-->
+    </VOICE_SEC_EN>
+</AIRPORT>

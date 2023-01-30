@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机场语音模拟系统</title>
+    <link rel="shortcut icon" href="#"/>
+    <link href="css/sy.css" type="text/css" rel="stylesheet" />
+</head>
+<script src="js/jquery.min.js"></script>
+
+<body>
+    <header>
+        <div class="tbys">
+
+            <div class="tbtx kzfd">
+                <div class="kzfd"></div>
+                <div class="kzfd"></div>
+            </div>
+            <div class="kzfd">
+                <font class="biaoti">机场语音模拟系统</font>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="nrdkj">
+            <div>
+                <div class="sjxz" style="float: left;margin-top: 4px;">
+                    <div>
+                        <font>航班号</font><input maxlength="9" id="hbh" class="xzk" list="ppx">
+                        <datalist id="ppx">
+                            <option value="">
+                        </datalist>
+                    </div>
+                    <div>
+                        <font>事件类型</font><select id="sjlx" class="xzk" onchange="setSE(this)"></select>
+                    </div>
+                    <div id="ejsjkg" style="display: none;">
+                        <font>二级事件</font><select id="ejsj" class="xzk"></select>
+                    </div>
+                </div>
+                <div class="sjxz" style="margin-left: 10px;">
+                    <div>
+                        <audio id="audio_id" onplaying="disable_play()" onended="lxv()">
+                            <source id="s_voice" type="audio/mpeg">
+                            <embed id="e_voice" height="0" width="0">
+                                您的浏览器不支持播放，请更换新的高版本浏览器
+                        </audio>
+
+                    </div>
+                    <div class="yybb">
+                        <div class="anniu anone kzfd" id="play_an" onclick="scyy()">语音播报</div>
+                        <div class="ywxz kzfd">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" style="margin-top: 13px;"
+                                checked id="ywbb" /><span style="font-size: 14px;font-weight: normal;line-height: 40px;">英文播报</span></div>
+                    </div>
+
+
+
+                    <div style="margin-left: 8px;">
+                        <div class="anniu antwo" onclick="zybb()" id="zybb">自由播报</div>
+                    </div>
+                    
+                </div>
+                <div style="margin-left: 8px;" id="tx" class="txdiv">
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="biaoge">
+            <div class="biaoshou">
+                <div>序号</div>
+                <div>航班号</div>
+                <div>事件类型</div>
+                <div>二级事件</div>
+                <div>上次播报时间</div>
+                <div>播报状态</div>
+                <div>操作</div>
+            </div>
+            <div style="margin-top: 6px;">
+                <div class="xh">
+                    <div name="xuhao" style="display: none;">1</div>
+                    <div name="xuhao" style="display: none;">2</div>
+                    <div name="xuhao" style="display: none;">3</div>
+                    <div name="xuhao" style="display: none;">4</div>
+                    <div name="xuhao" style="display: none;">5</div>
+                    <div name="xuhao" style="display: none;">6</div>
+                    <div name="xuhao" style="display: none;">7</div>
+                    <div name="xuhao" style="display: none;">8</div>
+                    <div name="xuhao" style="display: none;">9</div>
+                    <div name="xuhao" style="display: none;">10</div>
+                    <div name="xuhao" style="display: none;">11</div>
+                    <div name="xuhao" style="display: none;">12</div>
+                    <div name="xuhao" style="display: none;">13</div>
+                    <div name="xuhao" style="display: none;">14</div>
+                    <div name="xuhao" style="display: none;">15</div>
+                </div>
+                <div id="biaoge" class="bg">
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/sy.js"></script>
+
+</html>
